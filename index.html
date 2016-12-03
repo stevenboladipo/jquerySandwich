@@ -1,0 +1,52 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trigger Click</title>
+
+	<!--Added link to the jQuery Library ---->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+</head>
+<body>					
+<h1>Click to Eat A Sandwich</h1>
+<h2 id="pbj">Peanut Butter Jelly</h2>
+<h2 id="roastbeef">Roast Beef</h2>
+<h2 id="grillcheese">Grill Cheese</h2>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+var pbjCounter = 0;
+var roastbeefCounter = 0;
+var grillcheeseCounter = 0;
+
+
+
+$("#pbj").click(function() {
+	alert("MMM....nom nom nom");
+	pbjCounter++;
+	alert("You've nom nom nom"  + pbjCounter + "pbj sandwiches");
+});
+
+$("#roastbeef").click(function() {
+	alert("MMM....nom nom nom");
+	roastbeefCounter++;
+	alert("You've nom nom nom"  + roastbeefCounter + "roast beef sandwiches");
+});
+
+
+$("#grillcheese").click(function() {
+	alert("MMM....nom nom nom");
+	grillcheeseCounter++;
+	alert("You've nom nom nom"  + grillcheeseCounter + "grill cheese sandwiches");
+});
+
+});
+
+</script>
+</body>
+</html>
